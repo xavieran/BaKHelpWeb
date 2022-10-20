@@ -1,0 +1,342 @@
+<HTML>
+
+
+<!-- Mirrored from notendur.hi.is/eybjorn/krondor/bakhack.html by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 07 Jan 2011 19:12:27 GMT -->
+<HEAD>
+
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+
+   <TITLE>Betrayal at Krondor - BaK-Hacker!</TITLE>
+
+   <LINK HREF="icon.gif">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+
+pdspaces=new Array
+function startup()
+{
+	predefinespaces(marqlength)
+	textticker()
+}
+function spaces(nrofspcs)
+{
+	spcstring=""
+	for(i=0;i<nrofspcs;i++) spcstring=spcstring+" "
+	return spcstring
+}
+function predefinespaces(nrofspcs)
+{
+	pdspaces[0]=""
+	for(i=1;i<=nrofspcs;i++) pdspaces[i]=spaces(i)
+}
+var nroflines=0
+
+function textarray()
+
+{
+
+	nroflines=textarray.arguments.length
+
+	for(i=0;i<nroflines;i++)
+
+		this[i]=textarray.arguments[i]
+
+}
+
+textlines=new textarray
+
+(
+
+	"Choose which characters to play with...",
+
+	"Change all characters’ skills and attributes...",
+
+	"Change all characters’ inventories...",
+
+	"Edit all characters' spells...",
+
+	"Edit the party's money...",
+
+	"Edit the party's keys...",
+
+	"Change all characters’ physical condition...",
+
+	"Transport the party to any location...",
+
+	"Save to different file names...",
+
+	"and more..."
+
+)
+
+var linenr=0
+
+var startpos=0
+
+var endpos=0
+
+var marqlength=30
+
+var l=textlines[0].length
+
+var shorttimeout=55
+
+var curtextline=""
+function textticker()
+{
+	if(endpos>marqlength) startpos=(endpos - marqlength)
+	else{
+		startpos=0
+		curtextline=pdspaces[marqlength-endpos]
+		}
+	document.form_features.textfield.value=curtextline+textlines[linenr].substring(startpos,endpos)
+	if(endpos++==l+marqlength){
+		endpos=0;
+		linenr++
+		if(linenr==nroflines) linenr=0
+		l=textlines[linenr].length
+		}
+	setTimeout("textticker()",shorttimeout)
+}
+//-->
+
+</SCRIPT>
+
+</HEAD>
+
+
+
+<BODY TEXT="#00FF00" BGCOLOR="#000000" LINK="#FF0000" VLINK="#FF0000" ALINK="#FFFFFF" onLoad="startup()">
+
+
+
+<IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=96 WIDTH=96 ALIGN=LEFT>
+
+<IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=96 WIDTH=96 ALIGN=RIGHT>
+
+<CENTER><FONT SIZE=+2>
+
+<A HREF="mailto:fe79@yahoo.com?subject=BH Comment">Fredrik Eriksson's</A><BR>
+
+</FONT><FONT SIZE=+4>BaK-Hacker</FONT><BR><FONT SIZE=+2>(Version 8.2)</FONT><BR>
+
+<FONT SIZE=+1>
+
+Send <A HREF="mailto:fe79@yahoo.com?subject=BH Comment">Fredrik</A> your comments!
+
+</FONT>
+
+<HR><FONT SIZE=+2>
+
+The ULTIMATE BaK Editor, written exclusively for the BaK Help Web
+
+<HR>Do you want to download BaK-Hacker now?<BR>
+
+</FONT>
+
+<FONT SIZE=+3><A HREF="bakh_v82.exe">YES!</A></FONT><BR>
+
+<B>Run <I>bakh_v82.exe</I> to unzip all necessary files.<BR>
+
+You will need the system file vbrun300.dll in order to run BaK-Hacker.
+
+It should be located in the Windows\System folder.
+
+In case you don't have it, you can download it <A HREF="vbrun.zip">NOW!</A></B>
+
+<HR>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+
+document.write("<FORM NAME='form_features'>")
+
+document.write("<B>Some features: </B>")
+
+document.write("<INPUT TYPE='text' NAME='textfield' SIZE='"+marqlength+"'>")
+
+document.write("</FORM><HR>")
+
+//-->
+
+</SCRIPT>
+
+<B><FONT COLOR="#00FFFF">Please read the following:</FONT></B>
+
+</CENTER>
+
+<TABLE BORDER=0 CELLSPACING=10 >
+
+<NOSCRIPT>
+
+<TR>
+
+<TD ALIGN=CENTER VALIGN=CENTER><IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=48 WIDTH=48></TD>
+
+<TD>BaK-Hacker is an extremely versatile program, that will allow you to
+
+edit BaK saves. You can change Characters' Skills and Statistics. You can
+
+add, replace, or remove Items from the Characters' Inventories, and modify
+
+these Items at will. You can cure afflicted Characters (and afflict them).
+
+You can even teleport to any possible (or impossible) location!
+
+</TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN=CENTER VALIGN=CENTER><IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=48 WIDTH=48></TD>
+
+<TD>Version 7.3+ even allows you to switch Characters within a Chapter! Would you like to
+
+play Chapter One with THREE Owyns? THREE Goraths? Or, if you are really
+
+dying for a challenge - how about Patrus - ALONE!
+
+</TD>
+
+</TR>
+
+<TR>
+
+<TD ALIGN=CENTER VALIGN=CENTER><IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=48 WIDTH=48></TD>
+
+<TD>BaK-Hacker also has many features, specially included for Hackers and
+
+Testers. Among these are: the ability to switch Chapters, fiddle with Coordinates,
+
+and keep track of Experience Points. And lots more. There are hardly any
+
+limits to what you can do here - it all depends on your deviousness in
+
+manipulating BaK!
+
+</TD>
+
+</NOSCRIPT>
+
+</TR>
+
+<TR>
+
+<TD ALIGN=CENTER VALIGN=CENTER><IMG SRC="icon.gif" ALT="BH Icon" HEIGHT=48 WIDTH=48></TD>
+
+<TD>BaK-Hacker is "safe". It only modifies saved-game files, and NEVER
+
+touches the all-important krondor.exe and krondor.001 files. If you somehow
+
+manage to irretrievably mess up a saved game, this is YOUR problem. It
+
+goes without saying that you should never fiddle with an IMPORTANT save,
+
+unless you have a copy of the original (which can easily be created within
+
+BaK-hacker).
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+<HR><CENTER><B>In case of problems, first check out the helpfile.<BR>
+
+Press F1 in the program, or double-click it in the program folder.<BR>
+
+Most aspects of BaK-hacker are explained there.<BR>
+
+If a solution to your problem cannot be found in the helpfile,
+
+then contact the <A HREF="mailto:fe79@yahoo.com?subject=BH Problem">author</A>.</B>
+
+<HR>
+
+<FONT SIZE=+3>FOOTNOTE:</FONT></CENTER>
+
+<BLOCKQUOTE><FONT SIZE=+1>The Webmaster would like to use this opportunity
+
+to express immeasurable gratitude to two persons - Jay Sevara, who started
+
+all this, and Fredrik Eriksson, who finished it!</FONT>
+
+<BLOCKQUOTE>Here's the story:
+
+<P>A year ago I hardly knew that hex-editors existed, let alone how
+
+to use them, and couldn't have cared less. Enter: Jay Sevara.
+
+
+
+<P>Jay sent me my first hex-editor, and patiently taught me how to
+
+use it in order to hack BaK (or, rather, in order to figure out HOW to
+
+hack BaK). Most of my spare time since then has been spent on this, which
+
+is actually the reason why the Web hasn't been updated a lot :-)
+
+
+
+<P>During my explorations I managed to collect a huge amount of hacking
+
+data. The big question was: How on earth was I ever going to find the time
+
+to add this data to the BaK Help Web? Utter despair. Enter: Fredrik Eriksson.
+
+
+
+<P>Soon after I started corresponding with Fredrik, it became obvious
+
+that he, too, was interested in BaK-hacking. So, of course, I sent him
+
+some data, and then some more. Before I knew what had happened, BaK-Hacker
+
+(version 1.0) had been conceived!
+
+
+
+<P>BaK-Hacker (version 8.2) is the final result. The program is,
+
+by now, only partially based on my original data. Fredrik has expanded
+
+it far beyond my wildest dreams, and patiently dealt with all my whims.
+
+
+
+<P><FONT SIZE=+2>Jay!</FONT> Thanks to you, wherever you are! (Are
+
+you still somewhere out there?)
+
+
+
+<P><FONT SIZE=+2>Fredrik!</FONT> Limm will, after all, not allow
+
+us access to Hacker's Rest, but BaK will never be the same! Tack s&aring;
+
+mycket!
+
+
+
+<P></BLOCKQUOTE>
+
+</BLOCKQUOTE>
+
+
+
+<CENTER><B><A HREF="krondor.html">[HOME]</A></B></CENTER>
+
+
+
+</BODY>
+
+
+<!-- Mirrored from notendur.hi.is/eybjorn/krondor/bakhack.html by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 07 Jan 2011 19:12:27 GMT -->
+</HTML>
+

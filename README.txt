@@ -1,0 +1,1 @@
+To go to the main page of the website OPEN KRONDOR.HTML from the list present after opening index.html

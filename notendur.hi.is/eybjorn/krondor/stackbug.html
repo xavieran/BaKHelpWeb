@@ -1,0 +1,263 @@
+<html>
+<!-- Mirrored from notendur.hi.is/eybjorn/krondor/stackbug.html by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 07 Jan 2011 19:11:36 GMT -->
+<head><title>Betrayal at Krondor - STACKBUG</title></head>
+<body bgcolor=black text=#00ff00 link=#00FFFF alink=blue vlink=#00FFFF>
+<a name=top>
+<center>
+<img src="bug2.gif" width=114 height=62 align=left>
+<img src="bug.gif" width=114 height=62 align=right border=0>
+<b>
+<font size=+3>The STACKBUG Page</font><br>
+The Ultimate Nethermander<p>
+
+<a href="tricks.html#tricks"><font color=#0000ff>[TRICKS]</font></a>
+<img src="transp.gif" width=20 height=5 border=0>
+<a href="kronwalk.html"><font color=#0000ff>[WALK]</font></a><p>
+<hr></center>
+
+<blockquote>
+
+There is a magnificent <font size=+3 color=#ffffff>BUG</font> in the game, which allows you to
+multiply any Stackable Item. If you still don't know what a
+Stackable Item is, go back to the <a href="basic.html">Basic Prices Page</a> to find out.<p>
+
+The best way for you to understand how the bug works is to
+experience it. Here's a quick way of experiencing STACKBUG:<p>
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<font size=+1 color=#ffff00>Start a New Game.</font><p>
+
+Gorath has Rations [5], Restoratives [10].<br>
+Owyn has Rations [11], Herbal Pack [3], Torch [2].<br>
+Locklear has Rations [6], Restoratives [10].<p>
+
+Haseth's Body is in front of you.<br>
+It has Rations[4], Picklocks[2].<p>
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<font size=+1 color=#ffff00>Give these Items to one of your Characters.</font><p>
+
+Haseth's Body will now be empty.<p>
+
+All the items you're now carrying (except for the Torch) are stackable,
+and therefore shareable. Utilizing STACKBUG, you can multiply these Items
+as often as you want, WITHOUT MOVING A STEP! All you need is an Item
+with a minimum of 2 Charges, and a CACHE with one empty Slot.<p>
+
+Haseth's (or any other) Body is a CACHE. A Cache may be defined
+as any place which can hold an Item (or Items) - Body, House, Chest,
+Hole, Bush, Dirt, Grave, etc.<p>
+
+Any CACHE has a MAXIMUM NUMBER OF SLOTS. For example, Haseth's Body can only
+hold FOUR Items - i.e. it has FOUR SLOTS. Now let's determine this:<p> 
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<font size=+1 color=#ffff00>Place the two Armors, the Torch and the Herbal Pack on Haseth's Body.</font><p>
+(Don't panic! You can take them back later!)<p>
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<font size=+1 color=#ffff00>Now try placing a FIFTH Item on the Body.</font><p>
+
+The game will refuse.<p>
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<font size=+1 color=#ffff00>Now take back the Herbal Pack.</font><p>
+
+Haseth's Body is now a Cache with ONE SLOT FREE. This is exactly
+what we want.<p>
+
+<img src="bug2.gif" width=57 height=31 align=left>
+<img src="bug.gif" width=57 height=31 align=right>
+Now comes the interesting part. Restoratives are a stackable Item,
+and will stack up to 24 Charges (the Maximum Stack Value). Gorath
+and Locklear both have 10 of these. Owyn has none. Now we are going
+to change Restoratives [1] to Restoratives [24]. Here's how:<p>
+
+<font size=+1 color=#ffff00>
+<img src="bug2.gif" width=29 height=16 align=left>Step 1: Make Gorath (or Locklear) give Owyn ONE CHARGE of Restoratives.<p>
+<img src="bug2.gif" width=29 height=16 align=left>Step 2: Make Owyn place this on Haseth's Body.<p>
+<img src="bug2.gif" width=29 height=16 align=left>Step 3: Repeat Step 1.<p>
+<img src="bug2.gif" width=29 height=16 align=left>Step 4: Repeat Step 2.<p></font>
+
+<font color=#ffff00>
+<img src="bug2.gif" width=57 height=31 align=left>
+Now, mysteriously, the game will ask you if you want to
+give Restoratives [23] to Haseth's Body! Of course you do!
+The result: Haseth's Body holds Restoratives [24]!! Take
+them!! Interestingly, the second Restoratives [1], which
+magically changed to Restoratives [23] at Step 4, will still
+be intact in Owyn's Inventory!<p>
+</font>
+
+<img src="bug.gif" width=57 height=31 align=right>
+You can repeat this as often as you want. And of course you
+can also do it with the Rations, Herbal Pack, and Picklocks.
+The results will be similar, but instead of Restoratives [23],
+you will get Rations [13], Herbal Pack [19], Picklocks [35].
+This is because of the varying MAXIMUM STACK VALUE. Rations
+stack up to 14, Herbal Packs to 20, Picklocks to 36. (Use these
+to experiment!)<p>
+
+<img src="bug.gif" width=57 height=31 align=right>
+To recapitulate: STACKBUG requires a Cache with one Slot free,
+and a Stackable Item with a minimum of TWO Charges. You need
+to place Item [1] into the Cache TWICE. The second time its
+value will change to Maximum Stack Value minus one.<p>
+
+<img src="bug.gif" width=57 height=31 align=right>
+So which Items are Stackable? If you go back to the Basic Prices
+page, all Stackable Items are shown in <font color=#ff0000>RED</font>, with the Maximum Stack
+Value shown in <font color=#ff0000>[Square Brackets]</font>. For your convenience here's a
+complete list, including Maximum Values:<p>
+
+<table border=0 cellspacing=5>
+
+<tr>
+<td><font color="ff0000"><b>Rations (any)</b></font></td>
+<td><font color="ff0000"><b>[14]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Quarrels (any)</b></font></td>
+<td><font color="ff0000"><b>[25]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Aventurine</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Picklocks</b></font></td>
+<td><font color="ff0000"><b>[36]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Rope</b></font></td>
+<td><font color="ff0000"><b>[20]</b></font></td>
+</tr>
+
+<tr><td colspan=2><b>COMBAT ITEMS:</b></td></tr>
+
+<tr>
+<td><font color="ff0000"><b>Potio Noxum</b></font></td>
+<td align=center><font color="ff0000"><b>[8]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Powder Bag</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr><td colspan=2><b>MODIFIERS:</b></td></tr>
+
+<tr>
+<td><font color="ff0000"><b>Coltari Poison</b></font></td>
+<td><font color="ff0000"><b>[20]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Flame Root Oil</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Killian's Root Oil</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Naphtha</b></font></td>
+<td><font color="ff0000"><b>[18]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Silverthorn</b></font></td>
+<td><font color="ff0000"><b>[20]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Silverthorn Anti-Venom</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr><td colspan=2><b>POTIONS:</b></td></tr>
+
+<tr>
+<td><font color="ff0000"><b>Dalatail Milk</b></font></td>
+<td><font color="ff0000"><b>[20]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Fadamor's Formula</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Herbal Pack</b></font></td>
+<td><font color="ff0000"><b>[20]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Lewton's Concentrate</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Redweed Brew</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Restoratives</b></font></td>
+<td><font color="ff0000"><b>[24]</b></font></td>
+</tr>
+
+<tr>
+<td><font color="ff0000"><b>Truesight Tea</b></font></td>
+<td><font color="ff0000"><b>[12]</b></font></td>
+</tr>
+
+</table><p>
+
+You should now have all the information needed in order to
+have fun with STACKBUG! But before we leave the subject, I
+would like to present you with a neat problem, which can be
+solved by using STACKBUG.<p>
+
+You may have noticed that the above start-of-game example
+can be performed WITHOUT TAKING A SINGLE STEP! Now I want to
+stretch this a bit further:<p>
+
+<img src="bug.gif" width=57 height=31 align=right>
+Have you ever longed for better Swords and Armor at the
+Start of the Game? If you have (how could you not!), I'm
+sure you've also lusted after the Greatsword and Elven
+Armor available in the Yabon Shop, just a few steps away
+from the starting position! And wept bitter tears from utter frustration
+at not having enough money to buy even ONE of them!<p>
+
+<img src="bug2.gif" width=57 height=31 align=right>
+After all, the cost here of two Greatswords (for Gorath and Locklear)
+and three Elven Armors (for all three Characters) is the staggering
+amount of 2437.5 (or slightly less, if you can Haggle, which is not
+likely at this stage)!<p>
+
+<font size=+1 color=#00ffff>Using STACKBUG you can actually afford ALL OF THESE, WITHOUT FIGHTING
+A SINGLE ENEMY!!</font> <font color=#999999>(For your information, the first possible Enemies are
+two Moredhel Warriors north of Yabon, and one Moredhel Warrior south
+of LaMut.)</font><p>
+
+<img src="bug2.gif" width=104 height=62 align=left>
+Can you solve this conundrum? I have provided a
+<a href="stacsolv.html">SOLUTION</a>, but if you're a true BAK addict,
+you will figure it out by yourself. If you manage to come up with a better solution
+than the one I've found, PLEASE let me know!
+</b></blockquote>
+<center><p>
+<a href="#top"><b>TOP OF PAGE</b></a><p>
+<img src="bug.gif" width=171 height=93><p>
+</body>
+
+<!-- Mirrored from notendur.hi.is/eybjorn/krondor/stackbug.html by HTTrack Website Copier/3.x [XR&CO'2006], Fri, 07 Jan 2011 19:11:36 GMT -->
+</html>
