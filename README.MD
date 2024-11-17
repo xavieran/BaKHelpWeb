@@ -2,4 +2,4 @@ Copy of Betrayal at Krondor Helpweb. Unfortunately the original webmaster, Eyste
 
 I am mirroring this on github for posterity.
 
-[BaK Help Web])(ttps://xavieran.github.io/BaKHelpWeb/notendur.hi.is/eybjorn/krondor/krondor.html)
+[BaK Help Web](https://xavieran.github.io/BaKHelpWeb/notendur.hi.is/eybjorn/krondor/krondor.html)
